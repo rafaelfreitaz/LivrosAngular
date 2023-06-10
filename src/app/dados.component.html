@@ -1,0 +1,27 @@
+<br>
+
+  <h2>Dados do Livro</h2>
+  <form (ngSubmit)="adicionarLivro()">
+    <div>
+      <label for="titulo">Título:</label> <br>
+      <input type="text" id="titulo" name="titulo" [(ngModel)]="novoLivro.titulo" required>
+    </div>
+    <br>
+    <div>
+      <label for="resumo">Resumo:</label> <br>
+      <input type="text" id="resumo" name="resumo" [(ngModel)]="novoLivro.resumo" required>
+    </div>
+    <br>
+    <div>
+      <label for="editora">Editora:</label> <br>
+      <input type="text" id="editora" name="editora" [(ngModel)]="novoLivro.editora" required>
+    </div>
+    <br>
+    <div>
+      <label for="autores">Autores:</label> <br>
+      <input type="text" id="autores" name="autores" [(ngModel)]="novoLivro.autores" required>
+    </div>
+    <br>
+    <button type="submit">Salvar</button>
+  </form>
+</div>
